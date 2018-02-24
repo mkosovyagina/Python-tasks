@@ -9,7 +9,7 @@ if sys.version_info[0] < 3:
 n = int(input("Input the length of progression"))
 first_num = float(input("Input the first number of progression"))
 diff = float(input("Input the difference of the progression"))
-filename = str("Arithmetic_progreesion") + str(".txt")
+filename = str("Arithmetic_progreesion_") + str(datetime.datetime.date(datetime.datetime.today())) + str(".txt")
 file = open(filename, 'w')
 num = first_num  #Wrinting in file the first number
 file.write(str(num))
